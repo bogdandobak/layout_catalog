@@ -23,34 +23,34 @@ $logo-size: 40px;
 .nav {
   display: flex;
   align-items: center;
-}
 
-.nav__item {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
+  &__item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
 
-.nav__link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-}
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+  }
 
-.nav__list {
-  margin-left: 20px;
+  &__list {
+    margin-left: 20px;
 
-  list-style: none;
+    list-style: none;
 
-  transition: color 300ms linear;
-  
-  &:hover {
-    color: #00acdc;
+    transition: color 300ms linear;
+    
+    &:hover {
+      color: #00acdc;
+    }
   }
 }
 
