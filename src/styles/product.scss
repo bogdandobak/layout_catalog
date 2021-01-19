@@ -30,6 +30,14 @@
 .product__photo {
   height: 134px;
   width: 160px;
+
+  transition: transform 1s ease-in-out;
+
+  &:hover {
+    border: 3px solid #f3f3f3;
+
+    transform: scale(1.2);
+  }
 }
 
 .product__item {
@@ -114,6 +122,8 @@
   text-align: center;
   
   border: 1px solid transparent;
+
+  transition: all 600ms linear;
   
   &:hover {
     box-sizing: border-box;
