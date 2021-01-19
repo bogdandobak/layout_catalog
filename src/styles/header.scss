@@ -45,6 +45,8 @@ $logo-size: 40px;
     margin-left: 20px;
 
     list-style: none;
+
+    transition: color 400ms linear;
     
     &:hover {
       color: #00acdc;
