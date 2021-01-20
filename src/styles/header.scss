@@ -2,11 +2,13 @@ $padding-header: 0 50px;
 $logo-size: 40px;
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   padding: $padding-header;
   margin-bottom: 50px;
-  
+  grid-template-rows: 60px;
+  grid-template-columns: 60px 757px;
+  justify-content: space-between;
+
   font-size: 12px;
   font-weight: $font-medium;
 
@@ -14,27 +16,28 @@ $logo-size: 40px;
 }
 
 .logo {
-  display: flex;
   align-self: center;
   height: $logo-size;
   width: $logo-size;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  height: 60px;
 
   &__item {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    grid-gap: 20px;
     padding: 0;
     margin: 0;
   }
 
   &__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    align-content: center;
     height: 60px;
+    
 
     text-transform: uppercase;
     text-decoration: none;
@@ -42,8 +45,6 @@ $logo-size: 40px;
   }
 
   &__list {
-    margin-left: 20px;
-
     list-style: none;
 
     transition: color 400ms linear;
