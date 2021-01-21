@@ -1,0 +1,25 @@
+@mixin gridBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px;
+  justify-content: space-between;
+  
+  background-color: #fff;
+}
+
+.block {
+  @include gridBlock;
+  padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1024px;
+  box-sizing: border-box;
+
+  &__item {
+    box-sizing: border-box;
+    max-width: 200px;
+    
+    background: #fff;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+  }
+}
